@@ -9,6 +9,9 @@
     color: white; }
     .m-sidenav md-list-item:hover {
       background-color: #0277BD; }
+  .m-sidenav .m-title {
+    color: white;
+    text-decoration: none; }
 
 .m-bg-list-item {
   background-color: #0277BD; }

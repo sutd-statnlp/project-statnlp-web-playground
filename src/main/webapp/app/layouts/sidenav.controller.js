@@ -10,5 +10,6 @@
     function SidenavController($scope, $state) {
         var vm = this;
         
+        vm.currentStage = $state.current.name;
     }
 })();

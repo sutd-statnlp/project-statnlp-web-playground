@@ -9,7 +9,14 @@
 
     function stateConfig($stateProvider) {
         $stateProvider.state('app', {
-            abstract: true
+            abstract: true,
+            views: {
+                'sidenav': {
+                    templateUrl: 'app/layouts/sidenav.html',
+                    controller: 'SidenavController',
+                    controllerAs: 'vm'
+                }
+            }
         });
     }
 })();

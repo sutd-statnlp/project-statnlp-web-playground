@@ -1,5 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
     <!-- build:css content/css/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.css">
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
     <!-- endinject -->
     <link rel="stylesheet" href="content/css/vendor.css">
     <!-- endbuild -->
@@ -20,17 +22,22 @@
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="manifest" href="manifest.webapp" />
 </head>
+
 <body ng-app="visualApp" ng-strict-di>
     <!--[if lt IE 9]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div class="container">
-        <div class="well" ui-view="content">
-            <!-- Angular views -->
+    <div layout="row" flex>
+        <div ui-view="sidenav">
         </div>
+        <md-content flex class="md-whiteframe-4dp m-content">
+            <div ui-view="content">
+                <!-- Angular views -->
+            </div>
+        </md-content>
 
         <div class="footer" ng-cloak>
-            
+
         </div>
     </div>
     <noscript>
@@ -66,14 +73,21 @@
     <script src="bower_components/angular-resource/angular-resource.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.js"></script>
+    <script src="bower_components/angular-material/angular-material.js"></script>
     <!-- endinject -->
     <!-- endbuild -->
 
     <!-- build:js app/app.js  -->
     <!-- inject:js -->
     <script src="app/app.module.js"></script>
+    <script src="app/layouts/sidenav.controller.js"></script>
     <script src="app/home/home.state.js"></script>
     <script src="app/home/home.controller.js"></script>
+    <script src="app/dataset/smsnp/smsnp.state.js"></script>
+    <script src="app/dataset/smsnp/smsnp.controller.js"></script>
+    <script src="app/dataset/dataset.state.js"></script>
     <script src="app/components/util/truncate-words.filter.js"></script>
     <script src="app/components/util/truncate-characters.filter.js"></script>
     <script src="app/components/util/sort-by.directive.js"></script>
@@ -85,6 +99,7 @@
     <script src="app/components/util/capitalize.filter.js"></script>
     <script src="app/components/util/base64.service.js"></script>
     <script src="app/blocks/handlers/state.handler.js"></script>
+    <script src="app/blocks/config/theme.config.js"></script>
     <script src="app/blocks/config/http.config.js"></script>
     <script src="app/blocks/config/compile.config.js"></script>
     <script src="app/app.state.js"></script>
@@ -93,4 +108,5 @@
     <!-- endbuild -->
 
 </body>
+
 </html>

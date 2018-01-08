@@ -1,0 +1,31 @@
+.m-sidenav {
+    width: 280px;
+    h1 {
+        color: white;
+        text-align: center;
+    }
+    md-content {
+        background-color: #1EAAF1;
+    }
+    md-list-item {
+        color: white;
+        &:hover {
+            background-color:#0277BD;
+        }
+    }
+}
+
+.m-bg-list-item {
+    background-color:#0277BD;
+}
+
+.m-content {
+    height:100vh;
+}
+
+.m-taps {
+    background-color: white;
+    md-tab {
+        background-color: white;
+    }
+}

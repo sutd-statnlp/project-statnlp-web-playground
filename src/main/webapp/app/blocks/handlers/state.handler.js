@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('demoApp')
+        .module('visualApp')
         .factory('stateHandler', stateHandler);
 
     stateHandler.$inject = ['$rootScope', '$state', '$window',
@@ -32,7 +32,7 @@
             });
 
             var stateChangeSuccess = $rootScope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
-                var titleKey = 'demoApp';
+                var titleKey = 'visualApp';
 
                 // Set the page title key to the one configured in state or use default one
                 if (toState.data.pageTitle) {

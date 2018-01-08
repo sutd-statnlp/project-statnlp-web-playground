@@ -1,4 +1,4 @@
-# AngularJS Initializer
+# StatNLP visualization
 
 ## Developement
 

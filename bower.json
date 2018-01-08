@@ -1,6 +1,6 @@
 {
   "version": "0.0.0",
-  "name": "demo-app",
+  "name": "visual-app",
   "appPath": "src/main/webapp/",
   "testPath": "src/test/javascript/spec",
   "dependencies": {

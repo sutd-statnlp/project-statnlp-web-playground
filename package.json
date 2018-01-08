@@ -1,7 +1,7 @@
 {
-  "name": "demo-app",
+  "name": "visual-app",
   "version": "0.0.0",
-  "description": "Description for demoApp",
+  "description": "Description for visualApp",
   "private": true,
   "license": "UNLICENSED",
   "cacheDirectories": [

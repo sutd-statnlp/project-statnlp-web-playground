@@ -100,7 +100,7 @@ gulp.task('html', function () {
     return gulp.src(config.app + 'app/**/*.html')
         .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(templateCache({
-            module: 'demoApp',
+            module: 'visualApp',
             root: 'app/',
             moduleSystem: 'IIFE'
         }))
@@ -109,7 +109,7 @@ gulp.task('html', function () {
 
 gulp.task('ngconstant:dev', function () {
     return ngConstant({
-        name: 'demoApp',
+        name: 'visualApp',
         constants: {
             VERSION: util.parseVersion(),
             DEBUG_INFO_ENABLED: true,
@@ -124,7 +124,7 @@ gulp.task('ngconstant:dev', function () {
 
 gulp.task('ngconstant:prod', function () {
     return ngConstant({
-        name: 'demoApp',
+        name: 'visualApp',
         constants: {
             VERSION: util.parseVersion(),
             DEBUG_INFO_ENABLED: false,

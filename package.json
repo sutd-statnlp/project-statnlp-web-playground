@@ -1,7 +1,7 @@
 {
   "name": "visual-app",
   "version": "0.0.0",
-  "description": "Description for visualApp",
+  "description": "Description for StatNLP Playground",
   "private": true,
   "license": "UNLICENSED",
   "cacheDirectories": [

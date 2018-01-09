@@ -1,6 +1,6 @@
 {
-  "name": "visualApp",
-  "short_name": "visualApp",
+  "name": "StatNLP Playground",
+  "short_name": "StatNLP Playground",
   "icons": [
       {
           "src": "/content/images/logo-demo.png",

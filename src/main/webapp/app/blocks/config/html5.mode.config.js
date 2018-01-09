@@ -1,13 +1,13 @@
-(function () {
-    'use strict';
+// (function () {
+//     'use strict';
 
-    angular
-        .module('visualApp')
-        .config(html5ModeConfig);
+//     angular
+//         .module('visualApp')
+//         .config(html5ModeConfig);
 
-    html5ModeConfig.$inject = ['$locationProvider'];
+//     html5ModeConfig.$inject = ['$locationProvider'];
 
-    function html5ModeConfig($locationProvider) {
-        $locationProvider.html5Mode({ enabled: true, requireBase: true });
-    }
-})();
+//     function html5ModeConfig($locationProvider) {
+//         $locationProvider.html5Mode({ enabled: true, requireBase: true });
+//     }
+// })();

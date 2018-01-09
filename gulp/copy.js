@@ -15,7 +15,6 @@ var config = require('./config');
 module.exports = {
     fonts: fonts,
     common: common,
-    swagger: swagger,
     images: images
 }
 
@@ -47,27 +46,6 @@ function common() {
         .pipe(gulp.dest(config.dist));
 }
 
-function swagger() {
-    return es.merge(
-        gulp.src([config.bower + 'swagger-ui/dist/**',
-             '!' + config.bower + 'swagger-ui/dist/index.html',
-             '!' + config.bower + 'swagger-ui/dist/swagger-ui.min.js',
-             '!' + config.bower + 'swagger-ui/dist/swagger-ui.js'])
-            .pipe(plumber({errorHandler: handleErrors}))
-            .pipe(changed(config.swaggerDist))
-            .pipe(gulp.dest(config.swaggerDist)),
-        gulp.src(config.app + 'swagger-ui/index.html')
-            .pipe(plumber({errorHandler: handleErrors}))
-            .pipe(changed(config.swaggerDist))
-            .pipe(replace('../bower_components/swagger-ui/dist/', ''))
-            .pipe(replace('swagger-ui.js', 'lib/swagger-ui.min.js'))
-            .pipe(gulp.dest(config.swaggerDist)),
-        gulp.src(config.bower  + 'swagger-ui/dist/swagger-ui.min.js')
-            .pipe(plumber({errorHandler: handleErrors}))
-            .pipe(changed(config.swaggerDist + 'lib/'))
-            .pipe(gulp.dest(config.swaggerDist + 'lib/'))
-    );
-}
 
 function images() {
     return gulp.src(bowerFiles({filter: ['**/*.{gif,jpg,png}']}), { base: config.bower })

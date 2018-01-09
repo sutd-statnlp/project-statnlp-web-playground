@@ -7,7 +7,8 @@
             'ngAria',
             'ui.router',
             'angular-loading-bar',
-            'ngMaterial'
+            'ngMaterial',
+            'oc.lazyLoad'
         ])
         .run(run);
 

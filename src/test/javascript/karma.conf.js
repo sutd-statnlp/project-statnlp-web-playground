@@ -26,6 +26,8 @@ module.exports = function (config) {
             'src/main/webapp/bower_components/jquery/dist/jquery.js',
             'src/main/webapp/bower_components/json3/lib/json3.js',
             'src/main/webapp/bower_components/messageformat/messageformat.js',
+            'src/main/webapp/bower_components/underscore/underscore.js',
+            'src/main/webapp/bower_components/d3/d3.v2.js',
             'src/main/webapp/bower_components/angular/angular.js',
             'src/main/webapp/bower_components/angular-aria/angular-aria.js',
             'src/main/webapp/bower_components/angular-loading-bar/build/loading-bar.js',
@@ -35,6 +37,7 @@ module.exports = function (config) {
             'src/main/webapp/bower_components/angular-animate/angular-animate.js',
             'src/main/webapp/bower_components/angular-messages/angular-messages.js',
             'src/main/webapp/bower_components/angular-material/angular-material.js',
+            'src/main/webapp/bower_components/oclazyload/dist/ocLazyLoad.js',
             'src/main/webapp/bower_components/angular-mocks/angular-mocks.js',
             // endbower
             'src/main/webapp/app/app.module.js',

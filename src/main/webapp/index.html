@@ -8,6 +8,7 @@
     <meta name="description" content="">
     <meta name="theme-color" content="#000000">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="/">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css content/css/vendor.css -->
     <!-- bower:css -->
@@ -62,13 +63,14 @@
         r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
         ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>-->
-    <script src="/content/js/d3.min.js"></script>
-    <script src="/content/js/d3.parcoords.js"></script>
+  
     <!-- build:js app/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/json3/lib/json3.js"></script>
     <script src="bower_components/messageformat/messageformat.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/d3/d3.v2.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-aria/angular-aria.js"></script>
     <script src="bower_components/angular-loading-bar/build/loading-bar.js"></script>
@@ -78,18 +80,29 @@
     <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="bower_components/angular-messages/angular-messages.js"></script>
     <script src="bower_components/angular-material/angular-material.js"></script>
+    <script src="bower_components/oclazyload/dist/ocLazyLoad.js"></script>
     <!-- endinject -->
     <!-- endbuild -->
+    
+    <script src="/content/js/burrow.js"></script>
 
     <!-- build:js app/app.js  -->
     <!-- inject:js -->
     <script src="app/app.module.js"></script>
+    <script src="app/visual/visual.state.js"></script>
+    <script src="app/visual/texttree/texttree.state.js"></script>
+    <script src="app/visual/texttree/texttree.controller.js"></script>
+    <script src="app/visual/textshow/textshow.state.js"></script>
+    <script src="app/visual/textshow/textshow.controller.js"></script>
+    <script src="app/services/dialog.service.js"></script>
     <script src="app/services/data.service.js"></script>
     <script src="app/layouts/sidenav.controller.js"></script>
     <script src="app/home/home.state.js"></script>
     <script src="app/home/home.controller.js"></script>
     <script src="app/dataset/smsnp/smsnp.state.js"></script>
     <script src="app/dataset/smsnp/smsnp.controller.js"></script>
+    <script src="app/dataset/maltext/maltext.state.js"></script>
+    <script src="app/dataset/maltext/maltext.controller.js"></script>
     <script src="app/dataset/dataset.state.js"></script>
     <script src="app/components/util/truncate-words.filter.js"></script>
     <script src="app/components/util/truncate-characters.filter.js"></script>
@@ -104,6 +117,7 @@
     <script src="app/blocks/handlers/state.handler.js"></script>
     <script src="app/blocks/config/theme.config.js"></script>
     <script src="app/blocks/config/http.config.js"></script>
+    <script src="app/blocks/config/html5.mode.config.js"></script>
     <script src="app/blocks/config/compile.config.js"></script>
     <script src="app/app.state.js"></script>
     <script src="app/app.constants.js"></script>

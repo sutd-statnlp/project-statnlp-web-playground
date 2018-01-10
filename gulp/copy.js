@@ -15,7 +15,10 @@ var config = require('./config');
 module.exports = {
     fonts: fonts,
     common: common,
-    images: images
+    images: images,
+    icons: icons,
+    data: data,
+    js: js
 }
 
 function fonts() {
@@ -52,4 +55,26 @@ function images() {
         .pipe(plumber({errorHandler: handleErrors}))
         .pipe(changed(config.dist +  'bower_components'))
         .pipe(gulp.dest(config.dist +  'bower_components'));
+}
+
+function icons() {
+    return gulp.src(config.app + 'content/icons/**')
+        .pipe(plumber({errorHandler: handleErrors}))
+        .pipe(changed(config.dist))
+        .pipe(rev())
+        .pipe(gulp.dest(config.dist + 'content/icons/'));
+}
+
+function data() {
+    return gulp.src(config.app + 'content/data/**')
+        .pipe(plumber({errorHandler: handleErrors}))
+        .pipe(changed(config.dist))
+        .pipe(gulp.dest(config.dist + 'content/data/'));
+}
+
+function js() {
+    return gulp.src(config.app + 'content/js/**')
+        .pipe(plumber({errorHandler: handleErrors}))
+        .pipe(changed(config.dist))
+        .pipe(gulp.dest(config.dist + 'content/js/'));
 }

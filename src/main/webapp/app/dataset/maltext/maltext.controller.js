@@ -197,8 +197,8 @@
                     'filePath': filePath
                 });
             }, function () {
-                var filePath = 'data/maltext/' + parentName + '/' + name;
-                $window.open('/content/wordtree.html?path=' + filePath, '_self');
+                var filePath = 'content/data/maltext/' + parentName + '/' + name;
+                $window.open('/wordtree.html?path=' + filePath, '_self');
             });
 
         }

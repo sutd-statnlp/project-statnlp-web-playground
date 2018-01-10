@@ -8,7 +8,8 @@
             'ui.router',
             'angular-loading-bar',
             'ngMaterial',
-            'oc.lazyLoad'
+            'oc.lazyLoad',
+            'chart.js'
         ])
         .run(run);
 

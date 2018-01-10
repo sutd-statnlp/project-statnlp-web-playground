@@ -43,6 +43,11 @@ gulp.task('copy:common', copy.common);
 
 gulp.task('copy:images', copy.images);
 
+gulp.task('copy:icons', copy.icons);
+
+gulp.task('copy:data', copy.data);
+gulp.task('copy:js', copy.js);
+
 gulp.task('images', function () {
     return gulp.src(config.app + 'content/images/**')
         .pipe(plumber({errorHandler: handleErrors}))
@@ -92,7 +97,7 @@ gulp.task('inject:test', inject.test);
 
 gulp.task('inject:troubleshoot', inject.troubleshoot);
 
-gulp.task('assets:prod', ['images', 'styles', 'html', 'copy:images'], build);
+gulp.task('assets:prod', ['images', 'styles', 'html', 'copy:images','copy:icons','copy:data','copy:js'], build);
 
 gulp.task('html', function () {
     return gulp.src(config.app + 'app/**/*.html')

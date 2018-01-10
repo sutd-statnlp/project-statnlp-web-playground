@@ -22,7 +22,7 @@
     <!-- endbuild -->
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="manifest" href="manifest.webapp" />
-    <link rel="stylesheet" type="text/css" href="content/css/d3.parcoords.css">
+  
 </head>
 
 <body ng-app="visualApp" ng-strict-di>
@@ -71,6 +71,7 @@
     <script src="bower_components/messageformat/messageformat.js"></script>
     <script src="bower_components/underscore/underscore.js"></script>
     <script src="bower_components/d3/d3.v2.js"></script>
+    <script src="bower_components/chart.js/dist/Chart.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-aria/angular-aria.js"></script>
     <script src="bower_components/angular-loading-bar/build/loading-bar.js"></script>
@@ -81,6 +82,7 @@
     <script src="bower_components/angular-messages/angular-messages.js"></script>
     <script src="bower_components/angular-material/angular-material.js"></script>
     <script src="bower_components/oclazyload/dist/ocLazyLoad.js"></script>
+    <script src="bower_components/angular-chart.js/dist/angular-chart.js"></script>
     <!-- endinject -->
     <!-- endbuild -->
     
@@ -92,8 +94,12 @@
     <script src="app/visual/visual.state.js"></script>
     <script src="app/visual/textshow/textshow.state.js"></script>
     <script src="app/visual/textshow/textshow.controller.js"></script>
+    <script src="app/services/nlu.service.js"></script>
     <script src="app/services/dialog.service.js"></script>
     <script src="app/services/data.service.js"></script>
+    <script src="app/prediction/prediction.state.js"></script>
+    <script src="app/prediction/nlu/nlu.state.js"></script>
+    <script src="app/prediction/nlu/nlu.controller.js"></script>
     <script src="app/layouts/sidenav.controller.js"></script>
     <script src="app/home/home.state.js"></script>
     <script src="app/home/home.controller.js"></script>
@@ -109,9 +115,11 @@
     <script src="app/components/util/sort-by.directive.js"></script>
     <script src="app/components/util/sort.directive.js"></script>
     <script src="app/components/util/parse-links.service.js"></script>
+    <script src="app/components/util/number-util.service.js"></script>
     <script src="app/components/util/error.constants.js"></script>
     <script src="app/components/util/date-util.service.js"></script>
     <script src="app/components/util/data-util.service.js"></script>
+    <script src="app/components/util/color-util.service.js"></script>
     <script src="app/components/util/capitalize.filter.js"></script>
     <script src="app/components/util/base64.service.js"></script>
     <script src="app/blocks/handlers/state.handler.js"></script>
@@ -119,6 +127,7 @@
     <script src="app/blocks/config/http.config.js"></script>
     <script src="app/blocks/config/html5.mode.config.js"></script>
     <script src="app/blocks/config/compile.config.js"></script>
+    <script src="app/blocks/config/chart.config.js"></script>
     <script src="app/app.state.js"></script>
     <script src="app/app.constants.js"></script>
     <!-- endinject -->

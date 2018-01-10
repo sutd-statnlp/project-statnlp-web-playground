@@ -304,3 +304,6 @@
   font-style: italic;
   padding: 5px 10px;
   width: 250px; }
+
+.m-nlu .m-chart md-tabs {
+  height: 298px; }

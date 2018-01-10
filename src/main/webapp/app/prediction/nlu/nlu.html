@@ -1,0 +1,67 @@
+<div layout-padding class="m-nlu">
+    <form name="form" class="md-whiteframe-1dp" ng-submit="vm.submitAnalyze()">
+        <md-input-container class="md-block">
+            <label>Please enter text</label>
+            <textarea ng-model="vm.text" name="text" required md-maxlength="800" minlength="10" rows="5" md-select-on-focus></textarea>
+            <div ng-messages="form.text.$error">
+                <div ng-message="required">This is required, must be more than 10 and less than 800 characters long.</div>
+            </div>
+        </md-input-container>
+        <div layout="row">
+            <span flex></span>
+            <button class="md-button md-raised md-primary md-right" type="submit">
+                <span class="m-color-white">Analyze</span>
+            </button>
+        </div>
+    </form>
+
+    <div ng-hide="vm.isAnalyzing" layout-padding class="md-whiteframe-1dp m-chart">
+        <md-tabs md-border-bottom>
+            <md-tab label="Emotion">
+                <md-content layout="row">
+                    <div flex>
+                        <canvas class="chart chart-pie" chart-data="vm.emotionChart.data" chart-labels="vm.emotionChart.labels"></canvas>
+                    </div>
+                    <div flex>
+                        <canvas class="chart chart-bar" chart-data="vm.emotionChart.data" chart-labels="vm.emotionChart.labels"></canvas>
+                    </div>
+
+                </md-content>
+            </md-tab>
+            <md-tab label="Keywords">
+                <md-content layout="row">
+                    <div flex>
+                        <canvas class="chart chart-polar-area" chart-data="vm.keywordChart.data" chart-labels="vm.keywordChart.labels">
+                        </canvas>
+                    </div>
+                    <div flex>
+                        <canvas class="chart chart-line" chart-data="vm.keywordChart.data" chart-labels="vm.keywordChart.labels">
+                        </canvas>
+                    </div>
+                </md-content>
+            </md-tab>
+            <md-tab label="Categories">
+                <md-content layout="row">
+                    <div flex="25">
+                    </div>
+                    <div flex>
+                        <canvas class="chart chart-polar-area" chart-data="vm.categoryChart.data" chart-labels="vm.categoryChart.labels">
+                        </canvas>
+                    </div>
+                    <div flex="25">
+                    </div>
+                </md-content>
+            </md-tab>
+            <md-tab label="Entities">
+                <md-content layout="row">
+                    <div flex>
+                        <canvas class="chart chart-bar" chart-data="vm.entityChart.data" chart-labels="vm.entityChart.labels" chart-colors="vm.entityChart.colors">
+                        </canvas>
+                    </div>
+
+                </md-content>
+            </md-tab>
+        </md-tabs>
+
+    </div>
+</div>

@@ -5,9 +5,9 @@
         .module('visualApp')
         .controller('TextShowController', TextShowController);
 
-    TextShowController.$inject = ['$scope', '$state', '$timeout', 'angularLoad', 'filePath'];
+    TextShowController.$inject = ['$scope', '$state', '$timeout', 'filePath'];
 
-    function TextShowController($scope, $state, $timeout, angularLoad, filePath) {
+    function TextShowController($scope, $state, $timeout, filePath) {
         var vm = this;
         vm.isLoading = true;
 

@@ -1,0 +1,319 @@
+{
+    "emotion": {
+        "document": {
+            "emotion": {
+                "sadness": 0.495333,
+                "joy": 0.467605,
+                "fear": 0.088724,
+                "disgust": 0.128676,
+                "anger": 0.135365
+            }
+        }
+    },
+    "keywords": [
+        {
+            "text": "desert ship",
+            "relevance": 0.986974
+        },
+        {
+            "text": "rugged Colorado Desert",
+            "relevance": 0.929987
+        },
+        {
+            "text": "librarian Myrtle Botts",
+            "relevance": 0.906193
+        },
+        {
+            "text": "World Trade Center",
+            "relevance": 0.829048
+        },
+        {
+            "text": "treasure ship",
+            "relevance": 0.795706
+        },
+        {
+            "text": "Anza-Borrego Desert",
+            "relevance": 0.79023
+        },
+        {
+            "text": "ship Evans",
+            "relevance": 0.783095
+        },
+        {
+            "text": "gallant ship",
+            "relevance": 0.767829
+        },
+        {
+            "text": "desert conservation",
+            "relevance": 0.765493
+        },
+        {
+            "text": "Agua Caliente",
+            "relevance": 0.74811
+        },
+        {
+            "text": "Viking craft",
+            "relevance": 0.741091
+        },
+        {
+            "text": "wooden remains",
+            "relevance": 0.740671
+        },
+        {
+            "text": "untold riches",
+            "relevance": 0.729245
+        },
+        {
+            "text": "vast lake",
+            "relevance": 0.722739
+        },
+        {
+            "text": "fake news",
+            "relevance": 0.722333
+        }
+    ],
+    "categories": [
+        {
+            "score": 0.587131,
+            "label": "/travel/tourist destinations/mexico and central america"
+        },
+        {
+            "score": 0.438649,
+            "label": "/home and garden"
+        },
+        {
+            "score": 0.408433,
+            "label": "/health and fitness/disorders/mental disorder/panic and anxiety"
+        }
+    ],
+    "entities": [
+        {
+            "type": "GeographicFeature",
+            "text": "Anza-Borrego Desert",
+            "relevance": 0.844906,
+            "count": 4
+        },
+        {
+            "type": "Person",
+            "text": "Myrtle Botts",
+            "relevance": 0.828277,
+            "count": 7
+        },
+        {
+            "type": "GeographicFeature",
+            "text": "Colorado Desert",
+            "relevance": 0.57604,
+            "count": 1
+        },
+        {
+            "type": "Person",
+            "text": "Albert S. Evans",
+            "relevance": 0.508076,
+            "count": 4
+        },
+        {
+            "type": "GeographicFeature",
+            "text": "Canebrake Canyon",
+            "relevance": 0.462965,
+            "count": 2
+        },
+        {
+            "type": "GeographicFeature",
+            "text": "Desert Dunes",
+            "relevance": 0.441075,
+            "count": 1
+        },
+        {
+            "type": "Location",
+            "text": "Southern California",
+            "relevance": 0.406857,
+            "disambiguation": {
+                "subtype": [
+                    "Region"
+                ]
+            },
+            "count": 2
+        },
+        {
+            "type": "Location",
+            "text": "Mexico",
+            "relevance": 0.397927,
+            "disambiguation": {
+                "subtype": [
+                    "Country"
+                ]
+            },
+            "count": 2
+        },
+        {
+            "type": "GeographicFeature",
+            "text": "Moonlight Canyon",
+            "relevance": 0.378398,
+            "count": 1
+        },
+        {
+            "type": "Location",
+            "text": "California",
+            "relevance": 0.363225,
+            "disambiguation": {
+                "subtype": [
+                    "StateOrCounty"
+                ]
+            },
+            "count": 1
+        },
+        {
+            "type": "Company",
+            "text": "Facebook",
+            "relevance": 0.340829,
+            "disambiguation": {
+                "subtype": [
+                    "Website",
+                    "VentureFundedCompany"
+                ],
+                "name": "Facebook",
+                "dbpedia_resource": "http://dbpedia.org/resource/Facebook"
+            },
+            "count": 1
+        },
+        {
+            "type": "GeographicFeature",
+            "text": "Agua Caliente",
+            "relevance": 0.327914,
+            "count": 1
+        },
+        {
+            "type": "Facility",
+            "text": "World Trade Center",
+            "relevance": 0.327758,
+            "disambiguation": {
+                "subtype": [
+                    "Location",
+                    "BuildingComplex",
+                    "Skyscraper"
+                ],
+                "name": "World Trade Center",
+                "dbpedia_resource": "http://dbpedia.org/resource/World_Trade_Center"
+            },
+            "count": 1
+        },
+        {
+            "type": "Location",
+            "text": "San Bernardino",
+            "relevance": 0.317555,
+            "disambiguation": {
+                "subtype": [
+                    "PlaceWithNeighborhoods",
+                    "City"
+                ],
+                "name": "San Bernardino, California",
+                "dbpedia_resource": "http://dbpedia.org/resource/San_Bernardino,_California"
+            },
+            "count": 1
+        },
+        {
+            "type": "Company",
+            "text": "Newsweek",
+            "relevance": 0.316993,
+            "count": 1
+        },
+        {
+            "type": "GeographicFeature",
+            "text": "Black Sea",
+            "relevance": 0.316171,
+            "disambiguation": {
+                "subtype": [
+                    "Location",
+                    "BodyOfWater",
+                    "Lake"
+                ],
+                "name": "Black Sea",
+                "dbpedia_resource": "http://dbpedia.org/resource/Black_Sea"
+            },
+            "count": 1
+        },
+        {
+            "type": "Location",
+            "text": "Baja California",
+            "relevance": 0.311679,
+            "disambiguation": {
+                "subtype": [
+                    "City"
+                ]
+            },
+            "count": 1
+        },
+        {
+            "type": "GeographicFeature",
+            "text": "Indian Gorge",
+            "relevance": 0.306718,
+            "count": 1
+        },
+        {
+            "type": "GeographicFeature",
+            "text": "Huntington Beach",
+            "relevance": 0.304823,
+            "count": 1
+        },
+        {
+            "type": "GeographicFeature",
+            "text": "Lake Cahuilla",
+            "relevance": 0.304821,
+            "count": 1
+        },
+        {
+            "type": "Location",
+            "text": "Manhattan",
+            "relevance": 0.304153,
+            "disambiguation": {
+                "subtype": [
+                    "GeographicFeature",
+                    "AdministrativeDivision",
+                    "GovernmentalJurisdiction",
+                    "Island",
+                    "PlaceWithNeighborhoods",
+                    "USCounty",
+                    "City"
+                ],
+                "name": "Manhattan",
+                "dbpedia_resource": "http://dbpedia.org/resource/Manhattan"
+            },
+            "count": 1
+        },
+        {
+            "type": "Broadcaster",
+            "text": "HBO",
+            "relevance": 0.279559,
+            "disambiguation": {
+                "subtype": [
+                    "TelevisionStation"
+                ]
+            },
+            "count": 1
+        },
+        {
+            "type": "Quantity",
+            "text": "800 years",
+            "relevance": 0.279559,
+            "count": 1
+        },
+        {
+            "type": "Quantity",
+            "text": "60 years",
+            "relevance": 0.279559,
+            "count": 1
+        },
+        {
+            "type": "Quantity",
+            "text": "$1.25",
+            "relevance": 0.279559,
+            "count": 1
+        },
+        {
+            "type": "Quantity",
+            "text": "$58",
+            "relevance": 0.279559,
+            "count": 1
+        }
+    ]
+}

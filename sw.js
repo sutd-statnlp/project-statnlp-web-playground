@@ -23,16 +23,16 @@ const fileManifest = [
     "revision": "6f2c6888e9f517bf8389b3622a5fcea7"
   },
   {
-    "url": "app/app-548e5998c9.js",
-    "revision": "2a35bfa608a8d76e6ab6130ab2c3064b"
+    "url": "app/app-d932f9b0de.js",
+    "revision": "e002ac5e8fb172009d791b300bcde36f"
   },
   {
     "url": "app/vendor-948a07e5af.js",
     "revision": "948a07e5afbc6ccab0f8b581cd1cdf63"
   },
   {
-    "url": "content/css/main-a0bcea133e.css",
-    "revision": "a0bcea133e22ee03e80f368b4b74a8db"
+    "url": "content/css/main-846eaf7d15.css",
+    "revision": "846eaf7d1562676fd276068347cdcd60"
   },
   {
     "url": "content/css/vendor-dc1ba62ced.css",
@@ -100,7 +100,7 @@ const fileManifest = [
   },
   {
     "url": "index.html",
-    "revision": "2cfcf25197c12dd940f2d5d6549a18ec"
+    "revision": "22ee59ee41bc2e67c614c0dfef55d2df"
   },
   {
     "url": "wordtree.html",

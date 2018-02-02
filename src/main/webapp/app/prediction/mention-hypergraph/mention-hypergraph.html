@@ -1,0 +1,64 @@
+<div layout-padding class="m-mention-hypergraph">
+    <form name="form" class="md-whiteframe-1dp" ng-submit="vm.submitAnalyze()">
+
+        <md-input-container class="md-icon-float md-block">
+            <label>Analyzing text</label>
+            <md-icon>
+                <i class="material-icons">translate</i>
+            </md-icon>
+            <textarea ng-model="vm.analysis.text" name="text" required md-maxlength="800" minlength="10" rows="5" md-select-on-focus></textarea>
+            <div ng-messages="form.text.$error">
+                <div ng-message="required">This is required, must be more than 10 and less than 800 characters long.</div>
+            </div>
+        </md-input-container>
+        <div layout="row">
+            <div flex>
+                <md-input-container class="md-icon-float md-block">
+                    <label>Mention Penalty</label>
+                    <md-icon>
+                        <i class="material-icons">confirmation_number</i>
+                    </md-icon>
+                    <input ng-model="vm.analysis.penalty" name="penalty" type="number" max="1" min="0" step="0.1" required>
+                    <div ng-messages="form.penalty.$error">
+                        <div ng-message="required" ng-message="min" ng-message="max">
+                            It is required, minimum is equal to 0.0 and the maximum value is equal to 1.
+                        </div>
+                    </div>
+                </md-input-container>
+            </div>
+            <div flex>
+                <md-input-container class="md-icon-float md-block">
+                    <label>Model Type</label>
+                    <md-icon>
+                        <i class="material-icons">blur_circular</i>
+                    </md-icon>
+                    <md-select name="model" ng-model="vm.analysis.model" required>
+                        <md-option ng-repeat="item in vm.models" value="{{item}}">{{item}}</md-option>
+                    </md-select>
+                </md-input-container>
+            </div>
+            <div flex>
+            </div>
+            <div flex="15">
+                <button class="md-button md-raised md-primary md-right" type="submit" ng-disabled="vm.isAnalyzing">
+                    <span class="m-color-white">Analyze</span>
+                </button>
+            </div>
+
+        </div>
+        <md-progress-linear ng-hide="!vm.isAnalyzing" ng-disabled="!vm.isAnalyzing" md-mode="indeterminate"></md-progress-linear>
+    </form>
+
+    <div ng-hide="!vm.isSuccess" layout-padding class="md-whiteframe-1dp m-chart">
+        <md-tabs md-border-bottom>
+            <md-tab label="Entities">
+                <md-content layout-padding layout="row">
+                    <div id="result" flex class="entities">
+                    </div>
+                </md-content>
+            </md-tab>
+
+        </md-tabs>
+
+    </div>
+</div>

@@ -23,20 +23,20 @@ const fileManifest = [
     "revision": "6f2c6888e9f517bf8389b3622a5fcea7"
   },
   {
-    "url": "app/app-d932f9b0de.js",
-    "revision": "e002ac5e8fb172009d791b300bcde36f"
+    "url": "app/app-95ff3b83c0.js",
+    "revision": "fca29d8c54206761cd3af7078344597e"
   },
   {
-    "url": "app/vendor-948a07e5af.js",
-    "revision": "948a07e5afbc6ccab0f8b581cd1cdf63"
+    "url": "app/vendor-65a453e7f6.js",
+    "revision": "65a453e7f6c0778bb54a907f40742e14"
   },
   {
-    "url": "content/css/main-846eaf7d15.css",
-    "revision": "846eaf7d1562676fd276068347cdcd60"
+    "url": "content/css/main-19a6a1cf99.css",
+    "revision": "19a6a1cf99f83a77edb8a318169780ed"
   },
   {
-    "url": "content/css/vendor-dc1ba62ced.css",
-    "revision": "dc1ba62ced355fb95b9c5a63b5ff60da"
+    "url": "content/css/vendor-a08232c266.css",
+    "revision": "a08232c266611f6a1d5a0956eeb17554"
   },
   {
     "url": "content/data/nlu/nlu-sample.json",
@@ -100,7 +100,7 @@ const fileManifest = [
   },
   {
     "url": "index.html",
-    "revision": "22ee59ee41bc2e67c614c0dfef55d2df"
+    "revision": "e1a7d4a46d628cb05659d5ff6050e3e7"
   },
   {
     "url": "wordtree.html",

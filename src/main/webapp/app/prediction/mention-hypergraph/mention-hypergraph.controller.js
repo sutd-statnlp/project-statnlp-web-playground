@@ -46,6 +46,8 @@
 
         function onError(error) {
             console.error(error);
+            vm.isSuccess = false;
+            vm.isAnalyzing = false;
         }
     }
 })();

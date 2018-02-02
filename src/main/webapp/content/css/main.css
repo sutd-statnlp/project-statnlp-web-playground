@@ -308,3 +308,75 @@
 
 .m-nlu .m-chart md-tabs {
   height: 298px; }
+
+.m-mention-hypergraph .entities {
+  line-height: 2; }
+
+.m-mention-hypergraph [data-entity] {
+  padding: 0.25em 0.35em;
+  margin: 0px 0.25em;
+  line-height: 1;
+  display: inline-block;
+  border-radius: 0.25em;
+  border: 1px solid; }
+
+.m-mention-hypergraph [data-entity]::after {
+  box-sizing: border-box;
+  content: attr(data-entity);
+  font-size: 0.6em;
+  line-height: 1;
+  padding: 0.35em;
+  border-radius: 0.35em;
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0px 0px 0.1rem 0.5rem; }
+
+.m-mention-hypergraph [data-entity][data-entity="LOC"] {
+  background: #EDE7F6;
+  border-color: #D1C4E9; }
+
+.m-mention-hypergraph [data-entity][data-entity="LOC"]::after {
+  background: #D1C4E9; }
+
+.m-mention-hypergraph [data-entity][data-entity="WEA"] {
+  background: #FCE4EC;
+  border-color: #F8BBD0; }
+
+.m-mention-hypergraph [data-entity][data-entity="WEA"]::after {
+  background: #F8BBD0; }
+
+.m-mention-hypergraph [data-entity][data-entity="ORG"] {
+  background: #E3F2FD;
+  border-color: #BBDEFB; }
+
+.m-mention-hypergraph [data-entity][data-entity="ORG"]::after {
+  background: #BBDEFB; }
+
+.m-mention-hypergraph [data-entity][data-entity="VEH"] {
+  background: #E8EAF6;
+  border-color: #C5CAE9; }
+
+.m-mention-hypergraph [data-entity][data-entity="VEH"]::after {
+  background: #C5CAE9; }
+
+.m-mention-hypergraph [data-entity][data-entity="FAC"] {
+  background: #ECEFF1;
+  border-color: #CFD8DC; }
+
+.m-mention-hypergraph [data-entity][data-entity="FAC"]::after {
+  background: #B2EBF2; }
+
+.m-mention-hypergraph [data-entity][data-entity="PER"] {
+  background: #FFF3E0;
+  border-color: #FFE0B2; }
+
+.m-mention-hypergraph [data-entity][data-entity="PER"]::after {
+  background: #FFE0B2; }
+
+.m-mention-hypergraph [data-entity][data-entity="GPE"] {
+  background: #EFEBE9;
+  border-color: #D7CCC8; }
+
+.m-mention-hypergraph [data-entity][data-entity="GPE"]::after {
+  background: #D7CCC8; }

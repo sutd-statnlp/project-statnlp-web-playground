@@ -6,7 +6,6 @@
             'ngResource',
             'ngAria',
             'ui.router',
-            'angular-loading-bar',
             'ngMaterial',
             'oc.lazyLoad',
             'chart.js'
